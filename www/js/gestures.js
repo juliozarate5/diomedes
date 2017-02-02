@@ -3,7 +3,6 @@ var app = {
     inicio: function () {
         this.iniciaBotones();
         this.iniciaFastClick();
-        this.iniciaHammer();
     },
     iniciaFastClick: function () {
         FastClick.attach(document.body);
@@ -20,46 +19,7 @@ var app = {
         botonVolMenos.addEventListener('click', app.bajaVol, false);
     },
     iniciaHammer: function () {
-        var botonPlay = document.getElementById('play');
-        var hammertime = new Hammer(botonPlay);
 
-        hammertime.get('pinch').set({enable: true});
-        hammertime.get('rotate').set({enable: true});
-
-        botonPlay.addEventListener('webkitAnimationEnd', function (e) {
-            botonPlay.className = '';
-        });
-
-        hammertime.on('tap', function (eve) {
-            botonPlay.className = 'press';
-        });
-        
-         hammertime.on('doubletap', function (ev) {
-         botonPlay.className = 'press';
-         });
-         
-         hammertime.on('press', function (ev) {
-         botonPlay.className = 'press';
-         });
-         
-         /*hammertime.on('swipe', function (ev) {
-         var clase = undefined;
-         direccion = ev.direction;
-         
-         if (direccion == 4)
-         clase = 'swipe-derecha';
-         if (direccion == 2)
-         clase = 'swipe-izquierda';
-         
-         botonPlay.className = clase;
-         });
-         
-         
-         hammertime.on('rotate', function (ev) {
-         var umbral = 25;
-         if (ev.distance > umbral)
-         zona.className = 'rotate';
-         });*/
     },
     play: function () {
         emisora.pause();
