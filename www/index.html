@@ -1,30 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/gestures.css" />
-        <title>Sonido Virtual</title>
-    </head>
-    <body>
-        <div id="titulo">Titulo</div>
-        <div id="banner">Banner</div>
-        <div id="animacion">Animación</div>
-        <button id="play">PLAY</button>
-        <button id="pausa">PAUSE</button>
-        VOLUME:<BR>
-        <button id="volumemas">+</button>
-        <button id="volumemenos">-</button>
-            <!--<button id='oscuro'>PAUSE</button>-->
-        <div id="redes">
-            <div id="red1"></div><div id="red2"></div><div id="red2"></div>
-        </div>
-        <audio id="emisora">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>La Cacica Stereo</title> 
+    <script src="js/ionic.js"></script>
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <link rel="stylesheet" type="text/css" href="css/gestures.css" />
+    <link href="css/ionic.css" rel="stylesheet">
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+      .show-list-numbers-and-dots ul{
+        list-style-type: disc;
+        padding-left:40px;
+      }
+      .show-list-numbers-and-dots ol{
+        list-style-type: decimal;
+        padding-left:40px;
+      }
+    </style>
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7" class="grade-a platform-browser platform-win32 platform-ready">
+  <div>
+  <div>
+    <ion-nav-bar class="bar-stable nav-bar-container" nav-bar-transition="ios" nav-bar-direction="none" nav-swipe="">
+      <ion-nav-back-button class="hide"></ion-nav-back-button>
+    <div class="nav-bar-block" nav-bar="cached"><ion-header-bar class="bar-stable bar bar-header" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item"><i class="icon ion-ios-arrow-back"></i> <span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="title title-center header-item"></div></ion-header-bar></div><div class="nav-bar-block" nav-bar="active"><ion-header-bar class="bar-stable bar bar-header" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item"><i class="icon ion-ios-arrow-back"></i> <span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="title title-center header-item">La Cacica Stereo</div></ion-header-bar></div></ion-nav-bar>
+    <ion-nav-view class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-view id="page2" style="background-color: rgb(251, 20, 20); opacity: 1; transform: translate3d(0%, 0px, 0px);" class="pane" state="laCacicaStereo" nav-view="active">
+  <ion-content padding="true" class="scroll-content ionic-scroll  has-header"><div class="scroll padding" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+    <div id="laCacicaStereo-container3" class="conten">
+      <div>
+        <img src="images/fDdQDgCgRDiCwgIbpGrT_banner.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+    <div id="laCacicaStereo-button-bar1" class="button-bar"></div>
+    <div>
+      <img src="images/Rdk0KiTuQhaK4UVOMUth_white.gif" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div id="laCacicaStereo-button-bar6" class="button-bar">
+      <button id="play" class="button button-energized  button-block">Play</button>
+      <button id="pausa" class="button button-energized  button-block">Pause</button>
+    </div>
+    <div id="laCacicaStereo-button-bar7" class="button-bar">
+      <button id="volumemas" class="button button-positive  button-block">+</button>
+      <button id="volumemenos" class="button button-positive  button-block">-</button>
+    </div>
+    <div id="laCacicaStereo-container8">
+      <div id="laCacicaStereo-button-bar8" class="button-bar">
+        <a href-inappbrowser="facebook" id="laCacicaStereo-button37" class="button button-light  button-block icon ion-social-facebook"></a>
+        <button id="laCacicaStereo-button38" class="button button-stable  button-block icon ion-earth"></button>
+        <button id="laCacicaStereo-button39" class="button button-light  button-block icon ion-social-twitter"></button>
+      </div>
+    </div>
+           <audio id="emisora">
             <source src="http://198.27.88.38:7062/;stream.nsv" type="audio/ogg; codecs=&quot;opus&quot;">
             Your browser does not support HTML5 audio.
         </audio>
-      <script type="text/javascript" src="cordova.js"></script>
-      <script type="text/javascript" src="js/fastclick.js"></script>
-      <script type="text/javascript" src="js/gestures.js"></script>
-    </body>
-</html>
+    <div id="laCacicaStereo-markdown10" class="show-list-numbers-and-dots">
+      <p style="color:#F6F6F6;">Julio Martinez Z.</p>
+    </div>
+  </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+</ion-view></ion-nav-view>
+  </div>
+</div>
+  
+
+</body></html>
