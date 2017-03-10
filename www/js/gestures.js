@@ -1,4 +1,5 @@
 var emisora = document.getElementById('emisora');
+
 var app = {
     inicio: function () {
         this.iniciaBotones();
@@ -22,22 +23,17 @@ var app = {
 
     },
     play: function () {
-        emisora.pause();
-        if (emisora.paused) {
-            emisora.play();
-        }
+            document.getElementById('emisora').play();
     },
-    pausa: function () {
-        if (emisora.played) {
-            emisora.pause();
-        }
+    pausa: function () {     
+            document.getElementById('emisora').pause(); 
     },
-    subevol: function () {
-        emisora.volume += 0.1;
+    subeVol: function () {
+        document.getElementById('emisora').volume += 0.1;
     },
     bajaVol: function () {
-        emisora.volume -= 0.1;
-    },
+        document.getElementById('emisora').volume -= 0.1;
+    }
 };
 
 if ('addEventListener' in document) {
@@ -45,4 +41,5 @@ if ('addEventListener' in document) {
         app.inicio();
     }, false);
 }
+
 
