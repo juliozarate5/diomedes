@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+    @charset "UTF-8";
+    [ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}
+    ng\:form{display:block;}
+    .ng-animate-shim{visibility:hidden;}
+    .ng-anchor{position:absolute;}
+</style>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>La Cacica Stereo</title> 
@@ -43,11 +50,36 @@
   <body ng-app="app" animation="slide-left-right-ios7" class="grade-a platform-browser platform-win32 platform-ready">
   <div>
   <div>
-    <ion-nav-bar class="bar-stable nav-bar-container" nav-bar-transition="ios" nav-bar-direction="none" nav-swipe="">
-      <ion-nav-back-button class="hide"></ion-nav-back-button>
-    <div class="nav-bar-block" nav-bar="cached"><ion-header-bar class="bar-stable bar bar-header" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item"><i class="icon ion-ios-arrow-back"></i> <span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="title title-center header-item"></div></ion-header-bar></div><div class="nav-bar-block" nav-bar="active"><ion-header-bar class="bar-stable bar bar-header" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item"><i class="icon ion-ios-arrow-back"></i> <span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="title title-center header-item">La Cacica Stereo</div></ion-header-bar></div></ion-nav-bar>
-    <ion-nav-view class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-view id="page2" style="background-color: rgb(251, 20, 20); opacity: 1; transform: translate3d(0%, 0px, 0px);" class="pane" state="laCacicaStereo" nav-view="active">
-  <ion-content padding="true" class="scroll-content ionic-scroll  has-header"><div class="scroll padding" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+    <div class="bar-stable nav-bar-container" nav-bar-transition="ios" nav-bar-direction="none" nav-swipe="">
+      <div class="hide"></div>
+    <div class="nav-bar-block" nav-bar="cached">
+        <div class="bar-stable bar bar-header" align-title="center">
+            <button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item">
+                <i class="icon ion-ios-arrow-back"></i> 
+                <span class="back-text">
+                    <span class="default-title">Back</span>
+                    <span class="previous-title hide"></span>
+                        
+                </span>
+            </button><div class="title title-center header-item"></div>
+        </div>   
+    </div>
+    <div class="nav-bar-block" nav-bar="active">
+            <div class="bar-stable bar bar-header" align-title="center">
+                <button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item">
+                    <i class="icon ion-ios-arrow-back"></i> 
+                    <span class="back-text"><span class="default-title">Back</span>
+                        <span class="previous-title hide"></span></span>
+                </button>
+                <div class="title title-center header-item">La Cacica Stereo</div>
+            </div>
+                
+    </div>
+    </div>
+ <div class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe="">
+ <div id="page2" style="background-color: rgb(251, 20, 20); opacity: 1; transform: translate3d(0%, 0px, 0px);" class="pane" state="laCacicaStereo" nav-view="active">
+ <div padding="true" class="scroll-content ionic-scroll  has-header">
+      <div class="scroll padding" style="transform: translate3d(0px, 0px, 0px) scale(1);">
     <div id="laCacicaStereo-container3" class="conten">
       <div>
         <img src="images/fDdQDgCgRDiCwgIbpGrT_banner.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
@@ -72,17 +104,24 @@
         <button id="laCacicaStereo-button39" class="button button-light  button-block icon ion-social-twitter"></button>
       </div>
     </div>
-           <audio id="emisora">
-            <source src="http://198.27.88.38:7062/;stream.nsv" type="audio/ogg; codecs=&quot;opus&quot;">
+        <audio id="emisora">
+            <source src="http://198.27.88.38:7062/;stream.nsv" type="audio/mpeg">
             Your browser does not support HTML5 audio.
         </audio>
     <div id="laCacicaStereo-markdown10" class="show-list-numbers-and-dots">
       <p style="color:#F6F6F6;">Julio Martinez Z.</p>
     </div>
-  </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
-</ion-view></ion-nav-view>
+  </div>
+      <div class="scroll-bar scroll-bar-v">
+          <div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div>
+      </div>
+  </div>
+</div>
+    </div>
   </div>
 </div>
   
 
-</body></html>
+</body>
+</html>
+
