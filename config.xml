@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="localhost.test1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Cacica Stereo</name>
+<widget id="co.diomedesdiaz.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Diomedes Díaz</name>
     <description>
-        App La cacica Stereo
+        App Oficial de Diomedes Díaz
     </description>
-    <author email="juliozarate5@hotmail.com" href="http://phonegap.com">
+    <author email="juliozarate5@hotmail.com" href="http://www.diomedesdiaz.co">
         Julio Cesar Martinez
     </author>
     <content src="index.html" />
